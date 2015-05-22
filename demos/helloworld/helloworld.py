@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# coding=utf-8
 #
 # Copyright 2009 Facebook
 #
@@ -30,6 +31,7 @@ class MainHandler(tornado.web.RequestHandler):
 
 
 def main():
+    #日志操作
     tornado.options.parse_command_line()
     application = tornado.web.Application([
         (r"/", MainHandler),
