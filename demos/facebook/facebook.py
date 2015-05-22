@@ -25,8 +25,8 @@ import tornado.web
 from tornado.options import define, options
 
 define("port", default=8888, help="run on the given port", type=int)
-define("facebook_api_key", help="your Facebook application API key", type=str)
-define("facebook_secret", help="your Facebook application secret", type=str)
+define("facebook_api_key", default="980089592010032", help="your Facebook application API key", type=str)
+define("facebook_secret", default="8698ecc7d05a0627c36e910e6559eaab", help="your Facebook application secret", type=str)
 
 
 class Application(tornado.web.Application):
